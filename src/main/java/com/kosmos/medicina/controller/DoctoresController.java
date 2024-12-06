@@ -35,7 +35,7 @@ public class DoctoresController extends BaseController{
 	private doctoresService doctoresService;
 	
 	@GetMapping()
-	public ResponseEntity<?> getMethodName() {
+	public ResponseEntity<?> getDoctores() {
 		return ResponseEntity.ok(new GenericResponseDTO<>(SUCCESS, HTTP_SUCCESS, SUCCESS_MESSAGE, doctoresService.obtenerDoctores()));
 	}
 	
