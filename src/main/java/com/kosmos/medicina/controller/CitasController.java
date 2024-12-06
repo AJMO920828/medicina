@@ -38,7 +38,7 @@ public class CitasController extends BaseController {
                 return ResponseEntity.ok(new GenericResponseDTO<>(ERROR, HTTP_BAD_REQUEST, ERROR_MESSAGE, errors));
             }
             citasServices.guardar(citas);
-			return ResponseEntity.ok(new GenericResponseDTO<>(SUCCESS, HTTP_SUCCESS, SUCCESS_MESSAGE, "Doctor creado con éxito."));
+			return ResponseEntity.ok(new GenericResponseDTO<>(SUCCESS, HTTP_SUCCESS, SUCCESS_MESSAGE, "La cita se genero con éxito."));
         } catch (Exception e) {
         	return ResponseEntity.ok(new GenericResponseDTO<>(ERROR, HTTP_BAD_REQUEST, ERROR_MESSAGE, e.getMessage()));
 		}
